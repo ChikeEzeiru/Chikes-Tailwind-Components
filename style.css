@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+body{
+    background-color: #f8f8f8;
+    padding-top: 3rem;
+}
+
+.project-management-board{
+    background-color: white;
+    width: 80%;
+    height: auto;
+    border: 1px solid #eeeeee;
+    margin: auto;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+.project-list-one{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1.5px solid #f7f7f7;
+    padding: 1.5rem 0px;
+}
+
+.project-content-left{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    justify-content: center;
+}
+
+.list-title-section{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+
+.title-container{
+    width: fit-content;
+    height: auto;
+}
+
+.title-container h1{
+    font-size: 1rem;
+    font-weight: bold;
+    color: #6d6d6d;
+    letter-spacing: 0.25px;
+}
+
+.badge-container{
+    width: fit-content;
+    height: auto;
+    padding: 0.125rem 0.375rem;
+    background-color: #eefff6;
+    border-radius: 1rem;
+    border: 1px solid #48b389;
+}
+
+.in-progress{
+    background-color: #f1f1f1;
+    border: 1px solid #9b9b9b;
+}
+
+.archived{
+    background-color: #FEFCE8;
+    border: 1px solid #F3E6BC;
+}
+
+.badge-container p{
+    font-size: 0.675rem;
+    line-height: 1rem;
+    color: #48b389;
+}
+
+.in-progress p{
+    color: #9b9b9b;
+}
+
+.archived p{
+    color: #954d0e;
+}
+
+.list-body section{
+    width: fit-content;
+    height: auto;
+}
+
+.list-body-left-container{
+    width: fit-content;
+    height: auto;
+}
+
+.list-body-left-container p{
+    font-size: 0.75rem;
+    color: #9b9b9b;
+}
+
+.project-content-right{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.5rem;
+    align-items: center;
+}
+
+.right-button-container{
+    width: fit-content;
+    height: auto;
+}
+
+.right-button-container button{
+    background-color: #ffffff;
+    border: 2px solid #e3e3e3;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    color: gray;
+}
+
+.right-icon-container{
+    width: fit-content;
+    height: auto;
+}
+
+.right-icon-container img{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.last-list{
+    border: none;
+}
+
+@media (max-width: 768px){
+
+    .project-management-board{
+        background-color: white;
+        width: 95%;
+        height: auto;
+        border: 1px solid #eeeeee;
+        margin: auto;
+        padding: 1.5rem;
+        border-radius: 1rem;
+    }
+
+    .right-button-container{
+        display: none;
+    }
+
+    .right-button-container button{
+        display: none;
+    }
+
+}
